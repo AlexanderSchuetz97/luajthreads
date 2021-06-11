@@ -45,7 +45,7 @@ local execution = threads.execution()
 --the callable will always return org.luaj.vm2.Varargs
 --Runnable+Callable will only fail with LuaError
 --The param is optional and you may have any number of params
-local callable = execution:callable(mytest, "Hello World")
+local callable = execution:callable(async, "Hello World")
 
 -- put/get can also be used to exchange more variables.
 -- This is bidirectional and can even be used during execution
