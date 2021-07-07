@@ -12,7 +12,11 @@ A copy of the GNU General Public License Version 3 can be found in the COPYING f
 ## Usage
 Maven:
 ````
-TODO
+<dependency>
+    <groupId>io.github.alexanderschuetz97</groupId>
+    <artifactId>luajthreads</artifactId>
+    <version>0.1</version>
+</dependency>
 ````
 
 In Java:
@@ -53,7 +57,7 @@ execution:put("moreData", "someData")
 
 --This starts the callable
 --This method can also be called with any java.lang.Runnable or java.lang.Callable userdata
-local future = t.submit(callable)
+local future = threads.submit(callable)
 
 -- do other stuff in the meantime
 

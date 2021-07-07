@@ -84,16 +84,7 @@ public class LuaThreadLib extends TwoArgFunction {
      * Do not use this constructor for anything beyond simple things...
      */
     public LuaThreadLib() {
-        this(new GlobalFactory() {
-            @Override
-            public Globals createGlobals(Globals previousGlobals) {
-                Globals globals = JsePlatform.standardGlobals();
-                globals.compiler = previousGlobals.compiler;
-                globals.loader = previousGlobals.loader;
-                globals.load(new LuaThreadLib());
-                return globals;
-            }
-        });
+        this(DEFAULT_GLOBALS_FACTORY);
     }
 
     /**
