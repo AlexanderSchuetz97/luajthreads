@@ -56,4 +56,10 @@ public class LuaThreadLibTest {
         testScript("testutil.lua");
         testScriptJC("testutil.lua");
     }
+
+    @Test
+    public void testLoadFile() {
+        Assert.assertTrue(testScript("loadfiletest.lua").checkboolean(1));
+        Assert.assertTrue(testScriptJC("loadfiletest.lua").checkboolean(1));
+    }
 }

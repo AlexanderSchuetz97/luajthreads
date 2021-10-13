@@ -1016,6 +1016,10 @@ public class LuaThreadLib extends TwoArgFunction {
 
         if (upvaldesc.length == 1) {
             if (upvaldesc[0].instack) {
+                //loadfile loads a function with 1 upval called _ENV which is equal to _G and filled by closure constructor
+                if (closure.upValues[0].getValue() instanceof Globals) {
+                    return;
+                }
                 throw new LuaError("function is referencing upvalues called " + upvaldesc[0].name);
             }
             return;
