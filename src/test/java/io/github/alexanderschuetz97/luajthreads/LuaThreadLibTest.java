@@ -3,7 +3,6 @@ package io.github.alexanderschuetz97.luajthreads;
 import org.junit.Assert;
 import org.junit.Test;
 import org.luaj.vm2.Globals;
-import org.luaj.vm2.LuaValue;
 import org.luaj.vm2.Varargs;
 import org.luaj.vm2.compiler.LuaC;
 import org.luaj.vm2.lib.jse.JsePlatform;

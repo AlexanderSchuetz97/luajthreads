@@ -2,8 +2,8 @@
 Library for luaj to do multithreading in lua
 
 ## License
-Luajthreads is released under the GNU General Public License Version 3. <br>
-A copy of the GNU General Public License Version 3 can be found in the COPYING file.<br>
+Luajthreads is released under the GNU Lesser General Public License Version 3. <br>
+A copy of the GNU Lesser General Public License Version 3 can be found in the COPYING & COPYING.LESSER files.<br>
 
 ## Dependencies
 * Java 7 or newer
@@ -15,7 +15,7 @@ Maven:
 <dependency>
     <groupId>io.github.alexanderschuetz97</groupId>
     <artifactId>luajthreads</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
 </dependency>
 ````
 
